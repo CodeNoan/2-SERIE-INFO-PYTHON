@@ -1,0 +1,17 @@
+#Leia a idade do usuario e classifique-0 em:
+# - Crianca - 0 a 12 anos
+# - Adolescente - 13 a 17 anos
+# - Adulto - Acima de 18 anos
+idade = float(input('Digite a idade da pessoa: '))
+
+if idade >= 0 and idade <=12:
+    print('Essa pessoa eh uma crianca')
+
+elif idade >= 13 and idade <=17:
+    print('Essa pessoa eh uma adolescente')
+
+elif idade >= 18:
+    print('Essa pessoa eh um adulto')
+    
+elif idade < 0:
+    print('A idade eh invalida')
