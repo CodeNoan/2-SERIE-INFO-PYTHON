@@ -1,0 +1,10 @@
+# Crie um programa que peça o nome do usuário e gere uma senha automática. A senha deve seguir este formato: as três primeiras letras do nome, seguidas pelo número total de letras no nome e, finalmente, "@2025". Se o nome tiver 3 letras ou menos, peça ao usuário para digitar um nome maior e repita o processo até que um nome válido seja inserido.
+while True:
+    nome = input("Digite o primeiro nome do usuário: ")
+    
+    if len(nome) > 3:
+        senha = nome[:3] + str(len(nome)) + "@2025"
+        print("Senha gerada:", senha)
+        break  
+    else:
+        print("Digite um nome com mais de 3 caracteres.")
