@@ -1,0 +1,8 @@
+#Dada a seguinte string:  data_nascimento = "15/08/2000". Extraia o dia, o mês e o ano como variáveis separadas. Converta o ano para um número inteiro e exiba a idade da pessoa considerando o ano atual como 2025. 
+
+data_nascimento = "15/08/2000"
+dia = 15
+mes = 8
+ano = 2000
+idade = 2025 - ano 
+print(f"A idade da pessoa eh {idade}")
