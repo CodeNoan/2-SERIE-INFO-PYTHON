@@ -1,0 +1,25 @@
+#Crie um programa que calcule o valor final de uma compra com base no valor inicial e nas seguintes regras de desconto:
+
+#Compras de até R$ 100,00 não têm desconto.
+#Compras entre R$ 100,01 e R$ 200,00 têm 5% de desconto.
+#Compras acima de R$ 200,00 têm 10% de desconto.
+#O programa deve solicitar o valor da compra e exibir o valor final com o desconto aplicado.
+
+valor_inicial  = float(input("Digite o valor da compra: "))
+
+if valor_inicial <= 100.00:
+    print("Sem desconto")
+    print(f"Valor a pagar: {valor_inicial:.2f}")
+
+elif 100.01 <= valor_inicial <= 200.00:
+    print("5% de desconto")
+    desconto = valor_inicial * 0.05
+    valor_final = valor_inicial - desconto
+    print(f"Valor a pagar: {valor_final:.2f}")
+    
+elif valor_inicial > 200.00:
+    print("10% de desconto")
+    desconto = valor_inicial * 0.10
+    valor_final = valor_inicial - desconto
+    print(f"Valor a pagar: {valor_final:.2f}")
+    
