@@ -1,0 +1,13 @@
+# Calcule o valor final de um investimento após aplicar uma taxa de juros durante um certo período.
+# Fórmula = M=C×(1+i) elevado a t, onde:
+#C é o capital inicial (ex: 1000) 
+#r é a taxa de juros decimal (ex: 5% → 0.05) 
+#t é o tempo em anos (ex: 3) 
+#M é o montante final 
+
+capital = float(input("Digite o valor do capital investido: "))
+taxa_juros = float(input("Digite a taxa de juros em decimal, ex: 5% = 0.05: "))
+tempo = float(input("Digite o tempo em anos: "))
+
+montante_final = capital * ( 1 + taxa_juros) ** tempo
+print(f"O montante final será : {montante_final:.2f}")
