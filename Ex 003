@@ -1,0 +1,6 @@
+#Em Python, convencionamos que constantes são escritas em maiúsculas. Declare uma constante chamada PI com o valor 3.14159 e use-a para calcular a área de um círculo de raio  5. A fórmula usada para calcular a área de um raio é A = π * r². Print a área do raio com  arredondamento de duas casas decimais. 
+
+PI = 3.14159
+raio = 5
+area = PI * (raio * raio)
+print(f"A area do circulo eh {area:.2f}")
